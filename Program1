@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Tandem 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan =new Scanner (System.in);
+		System.out.println("Enter a number:a =");
+		double a=scan.nextDouble();
+		System.out.println("Enter a number:b =");
+		double b=scan.nextDouble();
+		System.out.println("Enetr the type of Operation:addition or subtraction or multiplication or division");
+		String s1=scan.next();
+		switch (s1) 
+		{
+		case "addition":System.out.println("The Addtion operation result is "+(a+b));
+		break;
+		case "subtraction":System.out.println("The Subtraction operation result is "+(a-b));
+		break;
+		case "multiplication":System.out.println("The Multiplication operation result is "+(a*b));
+		break;
+		case "division":System.out.println("The division operation result is "+(a/b));
+		break;
+		default:System.out.println("Invalid input !Try Again");
+		}
+	}
+}
